@@ -1,7 +1,14 @@
 const grid = document.querySelector('#grid');
-const box = document.createElement('div');
+
+
 function makeBox(){
+    const box = document.createElement('div');
+    box.classList.add('box'); 
     grid.appendChild(box);
-    box.classList.add('box'); // just adds class
-    // box.classList.toggle('box'); //box on or off
+}
+
+function makeRow() {
+    for (let i = 0; i < 16; i++) {
+        makeBox();
+    }
 }
