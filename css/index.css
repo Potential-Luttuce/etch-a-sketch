@@ -9,8 +9,7 @@
 #grid,
 #display {
 /*Box is 14pxs wide 14px x 16 boxes =224px*/
-    min-width: 1400px;
-    min-width: none;
+    width: 225px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

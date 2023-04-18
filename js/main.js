@@ -12,7 +12,7 @@ function displaySketchPad() {
         }
     }
 }
-// displaySketchPad();
+displaySketchPad();
 
 ///
 
