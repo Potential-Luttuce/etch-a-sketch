@@ -1,24 +1,26 @@
-const content = document.querySelector('#content');
 const grid = document.querySelector('#grid');
-function makeBox(){
+function makeDisplayBox(){
     const box = document.createElement('div');
+    const display = document.querySelector('#display');
     box.classList.add('box'); 
-    grid.appendChild(box);
-}
-function makeRow() {
-    for (let i = 0; i < 16; i++) {
-        makeBox();
-    }
+    display.appendChild(box);
 }
 function displaySketchPad() {
     for (let i = 0; i < 16; i++) {
         for (let j = 0; j < 16; j++) {
-            makeBox()
+            makeDisplayBox()
         }
     }
 }
 displaySketchPad();
 
+///
+
+function makeBox(){
+    const box = document.createElement('div');
+    box.classList.add('box'); 
+    grid.appendChild(box);
+}
 function makeSketchPad(n) {
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
@@ -27,12 +29,13 @@ function makeSketchPad(n) {
     }
 }
 
-function sizeAlert() {
-    const size = prompt('Please enter number to re-size SketchPad');
-    if (size < 1 || size > 100) {
-        alert('Error');
-        return;
-    } 
-    console.log(size);
+function getSize() {
+    const size = prompt('enter new grid size');
+    makeSketchPad(size);
+    const width = size * 14;
+    console.log(`New width should be ${width}`);
+    grid.style.width = `${width}`;
+
 }
+
 

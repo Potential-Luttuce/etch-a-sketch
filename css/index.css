@@ -6,7 +6,8 @@
 #gridSize {
     margin-bottom: 25px;
 }
-#grid {
+#grid,
+#display {
 /*Box is 14pxs wide 14px x 16 boxes =224px*/
     width: 225px; 
     display: flex;
