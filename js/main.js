@@ -12,7 +12,7 @@ function displaySketchPad() {
         }
     }
 }
-displaySketchPad();
+// displaySketchPad();
 
 ///
 
@@ -22,6 +22,7 @@ function makeBox(){
     grid.appendChild(box);
 }
 function makeSketchPad(n) {
+    if (n < 1 || n > 16) return 'ERROR';
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
             makeBox()
