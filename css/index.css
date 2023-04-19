@@ -20,7 +20,7 @@
     border: 2px solid black;
 }
 .box:hover {
-    background-color: blue;
+    background: blue;
 }
 .hide {
     display: none;

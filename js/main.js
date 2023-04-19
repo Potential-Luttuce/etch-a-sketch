@@ -38,5 +38,3 @@ function getSize() {
     grid.style.width = `${width}`;
 
 }
-
-
